@@ -139,6 +139,8 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
+    const questionImage = document.getElementById("question-image");
+    questionImage.style.display = "none";
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
